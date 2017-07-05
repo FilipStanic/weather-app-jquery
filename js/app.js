@@ -61,8 +61,8 @@ $("#weather-form").on("submit", function(event) {
     var error = '<span class="error">Sorry, something went wrong.</span>';
     $(".weather").append(error);
 
-    var errorDetails = JSON.parse(response.responseText);
-    console.log(errorDetails.message);
+    //var errorDetails = JSON.parse(response.responseText);
+    //console.log(errorDetails.message);
 
   });
 
