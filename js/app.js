@@ -10,7 +10,7 @@ $("#weather-form").on("submit", function(event) {
 
   units = "&units=metric";
 
-  apiUrl = "http://api.openweathermap.org/data/2.5/weather?" + "q=" + city + "&APPID=" + apiKey + units;
+  apiUrl = "https://api.openweathermap.org/data/2.5/weather?" + "q=" + city + "&APPID=" + apiKey + units;
 
   $.ajax({
 
@@ -47,7 +47,7 @@ $("#weather-form").on("submit", function(event) {
     $("#latit").append(lat);
     $("#longit").append(lon);
 
-    var img = '<img src="http://openweathermap.org/img/w/' + iconoImg + '.png' + '">';
+    var img = '<img src="https://openweathermap.org/img/w/' + iconoImg + '.png' + '">';
     $("#weather-description").empty().append(weatherDesc);
     $(".img-added img").remove();
     $(".img-added").append(img);
